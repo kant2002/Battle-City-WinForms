@@ -45,16 +45,16 @@ namespace Game
             switch (direction)
             {
                 case Direction.Up:
-                    spriteImage = Properties.Resources.BulletUp;
+                    spriteImage = Game.Properties.Resources.BulletUp;
                     break;
                 case Direction.Right:
-                    spriteImage = Properties.Resources.BulletRight;
+                    spriteImage = Game.Properties.Resources.BulletRight;
                     break;
                 case Direction.Down:
-                    spriteImage = Properties.Resources.BulletDown;
+                    spriteImage = Game.Properties.Resources.BulletDown;
                     break;
                 case Direction.Left:
-                    spriteImage = Properties.Resources.BulletLeft;
+                    spriteImage = Game.Properties.Resources.BulletLeft;
                     break;
             }
             // Добавление в список обектов игры

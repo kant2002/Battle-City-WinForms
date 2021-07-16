@@ -27,7 +27,7 @@ namespace Game
             gameOver.Location = new Point(0, 0);
             gameOver.Size = new Size(control.ClientRectangle.Width, control.ClientRectangle.Height);
             gameOver.BackColor = Color.Black;
-            gameOver.Image = Properties.Resources.Game_Over;
+            gameOver.Image = Game.Properties.Resources.Game_Over;
             gameOver.ImageAlign = ContentAlignment.MiddleCenter;
         }
 

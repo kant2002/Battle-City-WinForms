@@ -83,7 +83,7 @@ namespace Game
                 listInformationTank.Add(new InformationTank(new Point(560, i * 18)));
             }
 
-            string[] linesTileMap = Properties.Resources.Level_1.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] linesTileMap = Game.Properties.Resources.Level_1.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             int x = 0, y = 0;
             foreach (string line in linesTileMap)

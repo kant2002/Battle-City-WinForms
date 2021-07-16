@@ -21,7 +21,7 @@ namespace Game
             : base(new Rectangle(position.X, position.Y, SizeGame.WidtchSmoll, SizeGame.HeighSmoll))
         {
             // Установка картинки обекта
-            spriteImage = Properties.Resources.BrickWall;
+            spriteImage = Game.Properties.Resources.BrickWall;
         }
 
         /// <summary>

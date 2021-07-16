@@ -17,9 +17,9 @@ namespace Game
         /// Конструктор без параметров
         /// </summary>
         public ImgGameOver()
-            : base(new Rectangle(SizeGame.WidtchSmoll * 11, SizeGame.HeighWindowGame, Properties.Resources.game_over1.Width, Properties.Resources.game_over1.Height))
+            : base(new Rectangle(SizeGame.WidtchSmoll * 11, SizeGame.HeighWindowGame, Game.Properties.Resources.game_over1.Width, Game.Properties.Resources.game_over1.Height))
         {
-            spriteImage = Properties.Resources.game_over1;
+            spriteImage = Game.Properties.Resources.game_over1;
         }
         
         /// <summary>

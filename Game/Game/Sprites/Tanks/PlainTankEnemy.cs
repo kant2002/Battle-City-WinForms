@@ -22,17 +22,17 @@ namespace Game
             : base(new Rectangle(position.X, position.Y, SizeGame.WidtchBig, SizeGame.HeighBig), 3, direction)
         {
             moweLeft = new Image[] {
-                Properties.Resources.EnemyPlainTankLeft1,
-                Properties.Resources.EnemyPlainTankLeft2 };
+                Game.Properties.Resources.EnemyPlainTankLeft1,
+                Game.Properties.Resources.EnemyPlainTankLeft2 };
             moweRight = new Image[] {
-                Properties.Resources.EnemyPlainTankRight1,
-                Properties.Resources.EnemyPlainTankRight2 };
+                Game.Properties.Resources.EnemyPlainTankRight1,
+                Game.Properties.Resources.EnemyPlainTankRight2 };
             moweUp = new Image[] {
-                Properties.Resources.EnemyPlainTankUp1,
-                Properties.Resources.EnemyPlainTankUp2 };
+                Game.Properties.Resources.EnemyPlainTankUp1,
+                Game.Properties.Resources.EnemyPlainTankUp2 };
             moweDown = new Image[] {
-                Properties.Resources.EnemyPlainTankDown1,
-                Properties.Resources.EnemyPlainTankDown2 };
+                Game.Properties.Resources.EnemyPlainTankDown1,
+                Game.Properties.Resources.EnemyPlainTankDown2 };
 
             spriteImage = moweDown[0];
         }

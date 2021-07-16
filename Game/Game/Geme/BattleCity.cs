@@ -37,7 +37,7 @@ namespace Game
         public BattleCity(Form form)
         {
             form.ClientSize = new Size(SizeGame.WidtchWindowGame, SizeGame.HeighWindowGame);
-            form.Icon = Properties.Resources.Ico;
+            form.Icon = Game.Properties.Resources.Ico;
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Text = "Battle City";
 

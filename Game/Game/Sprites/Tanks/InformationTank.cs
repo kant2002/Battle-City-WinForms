@@ -18,10 +18,10 @@ namespace Game
         /// </summary>
         /// <param name="position">Позицыя на екране</param>
         public InformationTank(Point position)
-            : base(new Rectangle(position, Properties.Resources.information_tank.Size))
+            : base(new Rectangle(position, Game.Properties.Resources.information_tank.Size))
         {
             // Установка картинки обекта
-            spriteImage = Properties.Resources.information_tank;
+            spriteImage = Game.Properties.Resources.information_tank;
         }
     }
 }

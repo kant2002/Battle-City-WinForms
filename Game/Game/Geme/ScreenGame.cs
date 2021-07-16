@@ -20,7 +20,7 @@ namespace Game
         public ScreenGame(Control control)
         {
             Parent = control;
-            this.BackgroundImage = Properties.Resources.PlayingField;
+            this.BackgroundImage = Game.Properties.Resources.PlayingField;
             Location = new Point();
             ClientSize = new Size(SizeGame.WidtchWindowGame, SizeGame.HeighWindowGame);
             BackColor = Color.Black;
@@ -40,7 +40,7 @@ namespace Game
             base.OnPaint(e);
             Graphics g = e.Graphics;
 
-            Image image1 = Properties.Resources._11; // картинка 1
+            Image image1 = Game.Properties.Resources._11; // картинка 1
             // отобразение количества жизней игрока 
             g.TranslateTransform(580, 320);
             g.DrawImage(image1, 0, 0, image1.Width, image1.Height);

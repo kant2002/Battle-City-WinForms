@@ -23,17 +23,17 @@ namespace Game
             : base(new Rectangle(position.X, position.Y, SizeGame.WidtchBig, SizeGame.HeighBig), 3, direction)
         {
             moweLeft = new Image[] {
-                Properties.Resources.SmallTankPlayerLeft_1,
-                Properties.Resources.SmallTankPlayerLeft_2 };
+                Game.Properties.Resources.SmallTankPlayerLeft_1,
+                Game.Properties.Resources.SmallTankPlayerLeft_2 };
             moweRight = new Image[] {
-                Properties.Resources.SmallTankPlayerRight_1,
-                Properties.Resources.SmallTankPlayerRight_2 };
+                Game.Properties.Resources.SmallTankPlayerRight_1,
+                Game.Properties.Resources.SmallTankPlayerRight_2 };
             moweUp = new Image[] {
-                Properties.Resources.SmallTankPlayerUp_1,
-                Properties.Resources.SmallTankPlayerUp_2 };
+                Game.Properties.Resources.SmallTankPlayerUp_1,
+                Game.Properties.Resources.SmallTankPlayerUp_2 };
             moweDown = new Image[] {
-                Properties.Resources.SmallTankPlayerDown_1,
-                Properties.Resources.SmallTankPlayerDown_2 };
+                Game.Properties.Resources.SmallTankPlayerDown_1,
+                Game.Properties.Resources.SmallTankPlayerDown_2 };
             Animation();
         }
 

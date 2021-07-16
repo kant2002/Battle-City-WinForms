@@ -33,7 +33,7 @@ namespace Game
             menuControl = new Label();
             menuControl.Parent = control;
             menuControl.Location = new Point(0, 0);
-            menuControl.Image = Properties.Resources.Menu;
+            menuControl.Image = Game.Properties.Resources.Menu;
             menuControl.Size = menuControl.Image.Size;
 
             player = new Label();
@@ -68,7 +68,7 @@ namespace Game
 
             marker = new Label();
             marker.Parent = menuControl;
-            marker.Image = Properties.Resources.Marker;
+            marker.Image = Game.Properties.Resources.Marker;
             marker.Size = marker.Image.Size;
         }
 

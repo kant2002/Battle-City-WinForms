@@ -39,7 +39,7 @@ namespace Game
                 {
                     interval++;
                     // Меняем изображения снаряда на изображения взрыва
-                    spriteImage = Properties.Resources.Detonation;
+                    spriteImage = Game.Properties.Resources.Detonation;
                     // Вычисление положения обьекта
                     Position();
 
@@ -53,7 +53,7 @@ namespace Game
 
                     interval++;
                     // Меняем изображения взрыва
-                    spriteImage = Properties.Resources.Detonation2;
+                    spriteImage = Game.Properties.Resources.Detonation2;
                     // Вычисление положения обьекта
                     Position();
                 }
@@ -61,7 +61,7 @@ namespace Game
                 {
                     interval++;
                     // Меняем изображения взрыва
-                    spriteImage = Properties.Resources.Detonation3;
+                    spriteImage = Game.Properties.Resources.Detonation3;
                     // Вычисление положения обьекта
                     Position();
                 }
