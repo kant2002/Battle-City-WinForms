@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
     <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
-    <PublishAot>false</PublishAot>
-    <_SuppressWinFormsTrimError>true</_SuppressWinFormsTrimError>
+    <PublishAot>true</PublishAot>
+    <_SuppressWinFormsTrimError Condition="$(PublishAot) == true">true</_SuppressWinFormsTrimError>
     <CustomResourceTypesSupport>true</CustomResourceTypesSupport>
   </PropertyGroup>
 
@@ -20,7 +20,7 @@
   <ItemGroup>
     <RdXmlFile Include="rd.xml" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup> 
     <Compile Remove="Properties\**" />
     <Compile Remove="Geme\**" />
     <Compile Remove="Resources\**" />
@@ -41,8 +41,7 @@
   <ItemGroup>
     <None Remove="App.config" />
     <None Remove="ClassDiagram1.cd" />
-    <PackageReference Include="WinFormsComInterop" Version="0.3.2" />
-    <!--<PackageReference Include="WinFormsComInterop.SourceGenerator" Version="0.2.8" />-->
+    <PackageReference Include="WinFormsComInterop" Version="0.5.0" Condition="$(TargetFramework) == 'net8.0-windows'" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Game\Properties\Resources.Designer.cs">

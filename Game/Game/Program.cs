@@ -15,7 +15,9 @@ namespace Game
         [STAThread]
         static void Main()
         {
+#if !NET9_0_OR_GREATER
             ComWrappers.RegisterForMarshalling(WinFormsComInterop.WinFormsComWrappers.Instance);
+#endif
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
